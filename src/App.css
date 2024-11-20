@@ -1,0 +1,350 @@
+/* src/App.css */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.grid-display {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid-display {
+  grid-template-columns: 1fr; 
+  grid-template-rows: repeat(6, minmax(100px, auto)); 
+}
+
+@media (min-width: 600px) { 
+  .grid-display {
+      grid-template-columns: repeat(2, 1fr); 
+      grid-template-rows: repeat(3, minmax(100px, auto)); 
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-display {
+      grid-template-columns: repeat(3, 1fr); 
+      grid-template-rows: repeat(2, minmax(100px, auto)); 
+  }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px; 
+}
+
+h1 {
+  font-family: 'Satoshi';
+  font-weight: 700;
+  font-size: 24px;
+  color:rgb(98, 88, 88);
+}
+
+h2 {
+  font-family: 'BespokeSerif';
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(98, 88, 88);
+}
+
+h3 {
+  font-family: 'BespokeSerif';
+  font-weight: 700;
+  margin-top: 30px;
+  text-align: left;
+  font-size: 60px;
+  color: rgb(98, 88, 88);
+}
+
+.bold-button {
+  margin-top: 5px;
+  padding: 8px 18px;
+  font-size: 16px;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  color: rgb(98, 88, 88);
+  background-color: transparent;
+  border: 2px solid rgb(98, 88, 88);
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; 
+  padding: 20px;
+  outline: 2px solid rgb(98, 88, 88); 
+  outline-offset: 10px;
+  border-radius: 15px; 
+}
+
+.about-container img {
+  width: 250vh;
+  height: auto;
+  border-radius: 10px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.about-container p {
+  font-size: 20px;
+  font-family: 'Satoshi', sans-serif;
+  color: rgb(98, 88, 88);
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0; 
+}
+
+.favourites {
+  border-radius: 15px;
+  outline: 2px solid rgb(98, 88, 88);
+  padding: 10px;
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(98, 88, 88);
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filter-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+  font-family: Satoshi;
+}
+
+.filter-button:hover {
+  background-color: #bbb;
+  border-radius: 30px;
+}
+
+.filter-button.active {
+  background-color: #625858;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.skill-card {
+  color: rgb(98, 88, 88);
+  padding: 5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 20px;
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 16px;
+  border: 3px solid rgb(98, 88, 88); 
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'BespokeSerif';
+  src: url('./fonts/BespokeSerif-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'BespokeSerif';
+  src: url('./fonts/BespokeSerif-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: 'BespokeSerif';
+  src: url('./fonts/BespokeSerif-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: 'BespokeSerif';
+  src: url('./fonts/BespokeSerif-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'BespokeSerif';
+  src: url('./fonts/BespokeSerif-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+  font-family: 'BespokeSerif';
+  src: url('./fonts/BespokeSerif-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'BespokeSerif';
+  src: url('./fonts/BespokeSerif-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'BespokeSerif';
+  src: url('./fonts/BespokeSerif-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Extra Bold */
+@font-face {
+  font-family: 'BespokeSerif';
+  src: url('./fonts/BespokeSerif-Extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Extra Bold Italic */
+@font-face {
+  font-family: 'BespokeSerif';
+  src: url('./fonts/BespokeSerif-ExtraboldItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}

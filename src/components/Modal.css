@@ -1,0 +1,174 @@
+/* src/components/Modal.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    font-family: Satoshi;
+    font-weight: 600;
+    position: relative;
+    width: 85vw; 
+    height: 85vh; 
+    max-width: 1200px;
+    max-height: 900px;
+    background-color: #f0f0f0; 
+    border-radius: 10px;
+    overflow: auto;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5em;
+    color: rgb(50, 42, 42);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-title {
+    font-family: BespokeSerif;
+    font-style: italic;
+    font-size: 2.5rem;
+    text-align: left;
+    color: #333;
+}
+
+.modal-skills {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: left;
+}
+
+.modal-skill-item {
+    border: 1px solid rgb(98, 88, 88);
+    color: rgb(50, 42, 42);
+    padding: 2px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    font-family: 'Satoshi', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modal-description {
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1;
+    color: rgb(50, 42, 42);
+}
+
+.modal-divider {
+    border: none;
+    border-top: 2px solid rgb(50, 42, 42);
+    margin: 20px 0;
+}
+
+.modal-image {
+    width: 300px; 
+    height: 300px; 
+    margin: 0;
+    border: 2px solid rgb(98, 88, 88);
+    border-radius: 15px;
+    padding: 0;
+    object-fit: cover; 
+}
+
+.modal-extra-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 15px;
+    color: #666;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.modal-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.modal-icon-link {
+    color: #333; 
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    margin-left: 10px;
+}
+
+.modal-icon-link:hover {
+    transform: scale(1.1);
+    color: #000; 
+}
+
+.modal-video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.modal-video {
+    max-height: 40vh;
+    border: 3px solid #65796d;
+    border-radius: 10px;
+}
+
+.modal-images-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+    position: relative;
+}
+
+.toggle-view-button {
+    display: block;
+    margin: 20px auto;
+    padding: 4px 20px;
+    font-size: 1rem;
+    font-family: Satoshi, sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(98, 88, 88);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.toggle-view-button:hover {
+    background-color: rgb(98, 88, 88);
+    transform: scale(1.05);
+}
+
+.modal-image {
+    width: 45%;
+    max-height: 45vh;
+    border: 2px solid rgb(98, 88, 88);
+    border-radius: 10px;
+    object-fit: cover;
+}

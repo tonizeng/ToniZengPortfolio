@@ -1,0 +1,45 @@
+/* src/components/Skills.css */
+
+.skills-animation-container {
+    position: relative; 
+    width: 100vw;
+    height: 180px; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%); 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+.skills-animated-text {
+    display: flex;
+    animation: scroll-horizontal 2000s linear infinite; 
+    white-space: nowrap; 
+    gap: 20px; 
+    will-change: transform; 
+}
+
+.skills-animated-text p {
+    font-size: 20px; 
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    color: rgb(98, 88, 88);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 20px; 
+    border: 3px solid rgb(98, 88, 88); 
+    border-radius: 30px; 
+}
+
+
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
