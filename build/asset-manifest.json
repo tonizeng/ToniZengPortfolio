@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.533376fb.css",
-    "main.js": "/static/js/main.947c7f74.js",
+    "main.js": "/static/js/main.bf639191.js",
     "static/js/453.42b94591.chunk.js": "/static/js/453.42b94591.chunk.js",
     "static/media/spotspotdemo.mp4": "/static/media/spotspotdemo.953f583e07fc5bdded7a.mp4",
     "static/media/aircastdemo.mp4": "/static/media/aircastdemo.94613190983c2e391a32.mp4",
@@ -13,7 +13,7 @@
     "static/media/eg3.jpg": "/static/media/eg3.4c17bdc8559b367a6cab.jpg",
     "static/media/aircast.png": "/static/media/aircast.4ca9bf4b853abea6478a.png",
     "static/media/pfp.jpg": "/static/media/pfp.39438a1c2c7595fbc7e8.jpg",
-    "static/media/TZ2024.pdf": "/static/media/TZ2024.f080c0e74e624ccc7bbe.pdf",
+    "static/media/TZ2024.pdf": "/static/media/TZ2024.b87c9ec044118d3ee8b9.pdf",
     "static/media/eg6.png": "/static/media/eg6.81c222c1dcedce02a59f.png",
     "static/media/face.png": "/static/media/face.d93936e14900e0c8054d.png",
     "static/media/mode2.png": "/static/media/mode2.1d704fae3681b82a5d49.png",
@@ -48,11 +48,11 @@
     "static/media/linkedin.png": "/static/media/linkedin.084ff6c281b80f4700b7.png",
     "index.html": "/index.html",
     "main.533376fb.css.map": "/static/css/main.533376fb.css.map",
-    "main.947c7f74.js.map": "/static/js/main.947c7f74.js.map",
+    "main.bf639191.js.map": "/static/js/main.bf639191.js.map",
     "453.42b94591.chunk.js.map": "/static/js/453.42b94591.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.533376fb.css",
-    "static/js/main.947c7f74.js"
+    "static/js/main.bf639191.js"
   ]
 }
