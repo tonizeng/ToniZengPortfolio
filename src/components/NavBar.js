@@ -1,8 +1,7 @@
-// src/components/NavBar.js
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faStar as regularStar } from '@fortawesome/free-regular-svg-icons';
 import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
 import './NavBar.css';
@@ -16,6 +15,7 @@ import resumePdf from '../documents/TZ2024.pdf';
 const NavBar = ({ exploreMoreClicked }) => {
     const location = useLocation();
     const [activeLink, setActiveLink] = useState(location.pathname);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [showSocialLinks, setShowSocialLinks] = useState(false);
     const [showPdfModal, setShowPdfModal] = useState(false);
 
@@ -25,6 +25,11 @@ const NavBar = ({ exploreMoreClicked }) => {
 
     const handleClick = (path) => {
         setActiveLink(path === '/' ? '' : path);
+        setIsMenuOpen(false); // Close menu on link click
+    };
+
+    const toggleMenu = () => {
+        setIsMenuOpen((prev) => !prev);
     };
 
     const toggleSocialLinks = () => {
@@ -47,11 +52,7 @@ const NavBar = ({ exploreMoreClicked }) => {
                         onClick={() => handleClick('/about')}
                         className={activeLink === '/about' ? 'active' : ''}
                     >
-                        01 <FontAwesomeIcon 
-                             icon={activeLink === '/about' || exploreMoreClicked ? solidStar : regularStar} 
-                             className="nav-icon" 
-                             style={{ color: (activeLink === '/about' || exploreMoreClicked) ? '#65796d' : 'inherit' }} 
-                           /> ABOUT
+                        01 <FontAwesomeIcon icon={activeLink === '/about' || exploreMoreClicked ? solidStar : regularStar} className="nav-icon" /> ABOUT
                     </Link>
                 </li>
                 <li>
@@ -74,26 +75,69 @@ const NavBar = ({ exploreMoreClicked }) => {
                 </li>            
             </ul>
             <div className="navbar-right">
-                <img src={logo} alt="Logo" className="logo" onClick={toggleSocialLinks} style={{ cursor: 'pointer' }} />
-
+                <img
+                    src={logo}
+                    alt="Logo"
+                    className="logo"
+                    onClick={toggleSocialLinks}
+                    style={{ cursor: 'pointer' }}
+                />
                 {showSocialLinks && (
                     <div className="social-links">
                         <a href="https://www.linkedin.com/in/tonizeng/" target="_blank" rel="noopener noreferrer">
                             <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
-                        </a>                        
+                        </a>
                         <a href="https://github.com/tonizeng" target="_blank" rel="noopener noreferrer">
                             <img src={githubIcon} alt="GitHub" className="social-icon" />
                         </a>
                         <a href="mailto:tyzeng@uwaterloo.ca" target="_blank" rel="noopener noreferrer">
                             <img src={emailIcon} alt="Outlook" className="social-icon" />
-                        </a>                    
+                        </a>
                         <a href="#" onClick={togglePdfModal} className="social-icon">
-                            <img src={resumeIcon} alt="Resume" /> 
+                            <img src={resumeIcon} alt="Resume" />
                         </a>
                     </div>
                 )}
             </div>
-
+            <button className="hamburger-icon" onClick={toggleMenu}>
+                <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
+            </button>
+            {isMenuOpen && (
+                <div className={`nav-overlay ${isMenuOpen ? 'open' : ''}`}>
+                    <button className="close-btn" onClick={toggleMenu}>
+                        <FontAwesomeIcon icon={faTimes} />
+                    </button>
+                    <ul>
+                        <li>
+                            <Link
+                                to="/about"
+                                onClick={() => handleClick('/about')}
+                                className={activeLink === '/about' ? 'active' : ''}
+                            >
+                                01 ABOUT
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="/projects"
+                                onClick={() => handleClick('/projects')}
+                                className={activeLink === '/projects' ? 'active' : ''}
+                            >
+                                02 PROJECTS
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="/experience"
+                                onClick={() => handleClick('/experience')}
+                                className={activeLink === '/experience' ? 'active' : ''}
+                            >
+                                03 EXPERIENCE
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+            )}
             {showPdfModal && (
                 <div className="pdf-modal">
                     <div className="pdf-overlay" onClick={togglePdfModal}></div>

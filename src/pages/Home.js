@@ -19,7 +19,7 @@ const Home = ({ onExploreMoreClick }) => {
     }, [images.length]);
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', justifyContent: 'flex-start', width: '100%' }}>
+        <div className = "body" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', justifyContent: 'flex-start', width: '100%' }}>
             <img
                 src={images[currentImageIndex]}
                 alt="Slideshow"

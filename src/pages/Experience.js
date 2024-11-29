@@ -58,7 +58,7 @@ const Experience = () => {
 
     return (
         <div style={{ width: '100%'}}>
-            <h3 style={{ textAlign: 'center'}}> — My Experience —</h3>
+            <h3 style={{ textAlign: 'center'}}> —My Experience—</h3>
 
             {experiences.map((experience, index) => (
                 <ExperienceItem

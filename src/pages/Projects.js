@@ -27,7 +27,7 @@ const Projects = () => {
     return (
         <div style={{ width: '100%' }}>
             <h3 style={{ borderBottom: '2px solid rgb(98, 88, 88)' }}>My Projects</h3>
-            <div style={{ paddingTop: '30px' }} className="grid-display">
+            <div style={{ paddingTop: '30px'}} className="grid-display">
                 <ImageTile
                     image={image1}
                     altText="Image 1"
