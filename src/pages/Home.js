@@ -23,16 +23,16 @@ const Home = ({ onExploreMoreClick }) => {
             <img
                 src={images[currentImageIndex]}
                 alt="Slideshow"
-                style={{ width: '550px', paddingLeft: '10px', paddingTop: '80px', objectFit: 'cover' }}
+                style={{ width: '550px', paddingLeft: '10px', paddingTop: '50px', objectFit: 'cover' }}
             />
-            <h2 style={{ marginTop: '18px', fontStyle: 'italic' }}>Hi, I'm Toni,</h2>
-            <h1>welcome to my digital workspace.</h1>
+            <h2 style={{ marginTop: '18px', fontStyle: 'italic', fontSize: '35px' }}>Hi, I'm Toni,</h2>
+            <h1 style={{ fontSize: '20px', fontStyle: 'italic' }}>an aspiring software engineer.</h1>
             <Link to="/about">
                 <button
                     onClick={onExploreMoreClick}
                     onMouseEnter={(e) => {
-                        e.target.style.backgroundColor = '#65796d';
-                        e.target.style.color = 'white';
+                        e.target.style.fontStyle = 'italic';
+                        e.target.style.color = 'rgb(98, 88, 88)';
                     }}
                     onMouseLeave={(e) => {
                         e.target.style.backgroundColor = 'transparent';
@@ -40,8 +40,8 @@ const Home = ({ onExploreMoreClick }) => {
                     }}
                     style={{
                         marginTop: '10px',
-                        padding: '8px 18px',
-                        fontSize: '16px',
+                        padding: '4px 18px',
+                        fontSize: '20px',
                         fontFamily: 'Satoshi, sans-serif',
                         fontWeight: '700',
                         color: 'rgb(98, 88, 88)',
@@ -52,7 +52,7 @@ const Home = ({ onExploreMoreClick }) => {
                         transition: 'background-color 0.1s ease, color 0.1s ease', 
                     }}
                 >
-                    explore more
+                    welcome to my digital workspace
                 </button>
             </Link>
         </div>

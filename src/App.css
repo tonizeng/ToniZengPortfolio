@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .grid-display {
       grid-template-columns: repeat(4, minmax(0, 1fr)); /* Prevents overflow */
       grid-auto-rows: auto;
