@@ -73,10 +73,6 @@
     cursor: pointer;
 }
 
-.experience-item-button:hover {
-    background-color: #f0f0f0;
-}
-
 .experience-item-content {
     margin-top: 10px;
     background-color: white;

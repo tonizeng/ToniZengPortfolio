@@ -12,10 +12,10 @@ const Experience = () => {
             role: 'DevOps Developer | Team: Backend Apps & Tools',
             skills: ['C#', '.NET', 'DataDog', 'Artifactory', 'Logstash', 'OOP', 'Jenkins', 'Kubernetes'],
             description: `Kinaxis provides innovative supply chain management solutions, leveraging AI-driven analytics to help organizations streamline their planning and operational process.
-            ✦ Refined and tested Dockerized applications and Helm charts to ensure reliable Kubernetes deployments to align with best practices in logging and containerization, improving consistency and reducing deployment errors by 20%. 
-            ✦ Delivered 15 critical fixes to C# .NET applications, eliminating performance bottlenecks and improving system security. 
+            ✦ Refined Dockerized applications and Helm charts to align with logging and containerization best practices, enhancing consistency and reducing errors for Kubernetes deployments by 20%. 
+            ✦ Delivered 15 critical fixes to C# .NET applications, improving performance and security by implementing monthly service upgrades, optimizing error handling mechanisms, and enhancing logging frameworks for better traceability. 
             ✦ Developed Datadog dashboards to track and visualize real-time updates from Salesforce for 65 virtual machines.
-            ✦ Optimized logging processes for service logs transmitted to Datadog by implementing structured logging and refining Logstash parsing, reducing log processing time by 25%.
+            ✦ Streamlined logging pipelines for logs sent to Datadog by refining Logstash parsing, reducing processing time by 25%.
             ✦ Managed Artifactory build artifacts to support reliable cross-environment testing.`            
         },
         {
