@@ -13,7 +13,7 @@
 }
 
 .brand-name {
-    color: #65796d;
+    color: rgb(98, 88, 88);
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
@@ -31,13 +31,17 @@
 }
 
 .nav-links a {
-    color: #65796d;
+    color: rgb(98, 88, 88);
     text-decoration: none;
     font-size: 1.2em;
     padding: 0 15px;
     display: flex;
     align-items: center;
     transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #65796d; /* Change text color on hover */
 }
 
 .navbar-right {
