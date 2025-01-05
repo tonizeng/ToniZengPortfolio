@@ -34,6 +34,7 @@ const Projects = () => {
                     title="✧ your personal skin care assistant"
                     overlayText=" NO. 0 — spotSpot"
                     modalData={{
+                        id: "spot-spot",
                         title: "spotSpot",
                         description: "Skip the lines. Analyze your skin condition in a snap.",
                         skills: ["Python", "PyTorch", "scikit-learn", "Streamlit", "CSS"],
@@ -50,6 +51,7 @@ const Projects = () => {
                     title="✧ plan & explore new meal ideas" 
                     overlayText=" NO. 1 — meal plan buddy" 
                     modalData={{
+                        id: "meal-plan-buddy",
                         title: "MealPlanBuddy",
                         description: "Having trouble with meal planning in university? Try this.",
                         skills: ["Python", "Flask", "SQLite", "JavaScript", "HTML", "CSS", "Spoonacular API"],
@@ -66,6 +68,7 @@ const Projects = () => {
                     title="✧ simplify your ticket resolution process" 
                     overlayText=" NO. 2 — 'jiraxis' jira bot" 
                     modalData={{
+                        id: "jira-bot",
                         title: "'Jiraxis' Jira Bot",
                         description: "Stuck on another ticket? Talk to Jiraxis — your designated company chatbot.",
                         skills: ["OpenAI", "Python", "JavaScript", "Node.js", "ChromaDB", "Docker"],
@@ -81,6 +84,7 @@ const Projects = () => {
                     title="✧ portable air quality monitor" 
                     overlayText=" NO. 3 — aircast" 
                     modalData={{
+                        id: "aircast",
                         title: "aircast",
                         description: "Keep your family safe by checking the air quality before heading outdoors.",
                         skills: ["Arduino", "Python", "C++", "SolidWorks", "3D Printing"],
