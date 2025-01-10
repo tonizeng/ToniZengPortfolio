@@ -70,8 +70,8 @@ const Modal = ({ isOpen, onClose, title, id, description, skills = [], video, im
                     </div>
                 ) : (
                     <div className="modal-images-container">
-                        <img src={image1} alt="Project Image" className="modal-image" />
-                        <img src={image2} alt="Project Image" className="modal-image" />
+                        <img src={image1} alt="" className="modal-image" />
+                        <img src={image2} alt="" className="modal-image" />
                     </div>
                 )}
 

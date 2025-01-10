@@ -26,7 +26,7 @@ const Home = ({ onExploreMoreClick }) => {
                 style={{ width: '550px', paddingLeft: '10px', paddingTop: '50px', objectFit: 'cover' }}
             />
             <h2 style={{ marginTop: '18px', fontStyle: 'italic', fontSize: '35px' }}>Hi, I'm Toni,</h2>
-            <h1 style={{ fontSize: '20px', fontStyle: 'italic' }}>an aspiring software engineer.</h1>
+            <h1 style={{ fontSize: '20px', fontStyle: 'italic' }}>an aspiring developer with an interest in software, data, <br></br> and infrastructure engineering.</h1>
             <Link to="/about">
                 <button
                     onClick={onExploreMoreClick}

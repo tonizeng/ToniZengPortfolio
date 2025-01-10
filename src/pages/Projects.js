@@ -1,7 +1,7 @@
 // src/pages/Projects.js
 
-import React from 'react';
 import ImageTile from '../components/ImageTile';
+import React from "react";
 
 import image1 from '../images/spotSpot.png';
 import image2 from '../images/mpb.png';
@@ -22,8 +22,7 @@ import video1 from '../videos/spotspotdemo.mp4';
 import video2 from '../videos/mpbdemo.mp4';
 import video3 from '../videos/aircastdemo.mp4';
 
-const Projects = () => {
-    const imagesArray = [image1, image1];
+const Projects = () => {    
     return (
         <div style={{ width: '100%' }}>
             <h3 style={{ borderBottom: '2px solid rgb(98, 88, 88)' }}>My Projects</h3>
