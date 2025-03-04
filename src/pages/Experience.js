@@ -6,6 +6,14 @@ import ExperienceItem from '../components/ExperienceItem';
 const Experience = () => {
     const experiences = [
         {
+            title: 'Shopify',
+            link: 'https://www.shopify.com/ca',
+            date: '(Incoming) May 2025 – Aug 2025',
+            role: 'Software Engineering Intern',
+            skills: [],
+            description: ``            
+        },
+        {
             title: 'Kinaxis',
             link: 'https://www.kinaxis.com/en',
             date: 'Sept 2024 – Dec 2024',
